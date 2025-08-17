@@ -1,0 +1,70 @@
+/* stylelint-disable */
+
+@mixin custom-checkbox {
+  position: relative;
+
+  &__field {
+    appearance: none;
+    position: absolute;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: var(--text-black);
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      flex: 0 0 16px;
+      border-radius: 4px;
+      border: 1px solid #909090;
+      width: 16px;
+      height: 16px;
+      box-sizing: border-box;
+      transition: border 0.3s;
+    }
+
+    &::after {
+      content: "";
+      flex: 0 0 16px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-image: url("../img/checked.svg");
+      background-size: 12px 8px;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+}
+
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1;
+}
+
+.custom-checkbox__field.just-validate-error-field
+  + .custom-checkbox__content::before {
+  border: 1px solid #ff0000;
+}
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: none;
+}
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none;
+}

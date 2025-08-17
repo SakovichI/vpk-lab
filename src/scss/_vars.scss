@@ -1,0 +1,60 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Inter Display", sans-serif;
+  --content-width: 1300px;
+  --container-offset: 150px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --black: #000;
+  --text-black: #051824;
+  --green: #38b282;
+  --presentation-blue-bg: #032437;
+  --presentation-white-text: #ededed;
+  --system-lines: #e5e5e5;
+  --system-white: #fff;
+  --system-900: #04131c;
+  --system-ocean-blue: #5cb1e0;
+  --system-dark-sea-blue: #3b728f;
+  --system-sea-blue: #5c9dbb;
+  --system-sea-blue-hover: #538da8;
+  --system-stroke-button: rgba(107, 141, 160, 0.2);
+  --system-gray-system: #f5f6f7;
+  --ostalnye-100: #e0e2e2;
+  --ostalnye-200: #cfd5d6;
+  --ostalnye-300: #9da8ab;
+  --ostalnye-400: #7998a3;
+  --ostalnye-500: #6b8da0;
+  --ostalnye-600: #4e6c7c;
+  --ostalnye-700: #636466;
+  --ostalnye-800: #083544;
+  --ostalnye-08a045: #08a045;
+  --ostalnye-08a045: rgba(8, 160, 69, 0.1);
+}
+
+@media (max-width: 1600px) {
+  :root {
+    --container-offset: 60px;
+  }
+}
+
+@media (max-width: 1300px) {
+  :root {
+    --container-offset: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --container-offset: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-offset: 20px;
+  }
+}

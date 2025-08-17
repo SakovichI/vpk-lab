@@ -1,0 +1,41 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// Utils
+@import "./components/utils/header";
+@import "./components/utils/footer";
+@import "./components/utils/success-modal";
+@import "./components/utils/callback-modal";
+@import "./components/utils/question-modal";
+@import "./components/utils/file-upload";
+@import "./components/utils/fancybox";
+@import "./components/utils/tabs";
+@import "./components/utils/callback";
+@import "./components/utils/slider";
+@import "./components/utils/breadcrumbs";
+
+// Main page
+@import "./components/main-page/hero";
+@import "./components/main-page/about";
+@import "./components/main-page/advantages";
+@import "./components/main-page/team";
+@import "./components/main-page/certificates";
+
+// About page
+@import "./components/about-page/hero";
+@import "./components/about-page/laboratory";
+
+// FAQ page
+@import "./components/faq-page/faq";
+
+//Services page
+@import "./components/services-page/services";
+
+//Contacts page
+@import "./components/contacts-page/contacts";
+
+//Policy page
+@import "./components/policy-page/policy";

@@ -1,0 +1,96 @@
+<div
+  class="graph-modal__container callback-modal"
+  role="dialog"
+  aria-modal="true"
+  data-graph-target="callback-modal"
+>
+  <button
+    class="btn-reset js-modal-close graph-modal__close"
+    aria-label="Закрыть модальное окно"
+  ></button>
+  <div class="callback-modal__content callback-modal-content">
+    <div class="callback-modal-content__logo">
+      <img src="img/logo-primary.svg" width="264" alt="VPK_LAB" />
+    </div>
+    <p class="callback-modal-content__subtitle">
+      Заполните форму связи и обязательно укажите почту для последующего обмена
+      документами.
+    </p>
+    <form class="form-classic callback-form">
+      <label class="label">
+        <input class="input-reset" type="text" name="Имя" placeholder="Имя" />
+      </label>
+      <label class="label">
+        <input
+          class="input-reset"
+          type="tel"
+          name="Телефон"
+          placeholder="Телефон"
+        />
+      </label>
+      <label class="label">
+        <input
+          class="input-reset"
+          type="email"
+          name="Почта"
+          placeholder="Почта"
+        />
+      </label>
+      <label class="label">
+        <textarea
+          class="input-reset"
+          type="text"
+          name="Сообщение"
+          placeholder="Ваше сообщение"
+        ></textarea>
+      </label>
+      <div class="file-upload">
+        <label class="file-upload__label">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 11.9999V20.9999M12 11.9999L9.49996 13.9999M12 11.9999L14.5 13.9999M5.03396 9.11694C4.08817 9.35494 3.26184 9.9301 2.71021 10.7344C2.15859 11.5387 1.91964 12.5167 2.03827 13.4847C2.15689 14.4528 2.62492 15.3442 3.35443 15.9914C4.08393 16.6387 5.02469 16.9974 5.99996 16.9999H6.99996"
+              stroke="#686868"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15.8304 7.13796C15.4886 5.78453 14.645 4.6117 13.4705 3.85722C12.2961 3.10274 10.8787 2.82305 9.50566 3.07487C8.13264 3.32668 6.90674 4.09115 6.07647 5.2133C5.24619 6.33545 4.87366 7.73133 5.0344 9.11796C5.0344 9.11796 5.1874 9.99996 5.5004 10.5"
+              stroke="#686868"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M17 17C17.706 16.9995 18.404 16.8495 19.0479 16.5599C19.6917 16.2702 20.267 15.8475 20.7357 15.3195C21.2045 14.7915 21.5561 14.1702 21.7674 13.4965C21.9787 12.8229 22.045 12.1121 21.9618 11.4109C21.8786 10.7098 21.6479 10.0343 21.2848 9.42874C20.9217 8.82321 20.4345 8.30145 19.8552 7.89778C19.276 7.49412 18.6178 7.21772 17.924 7.08676C17.2302 6.9558 16.5166 6.97327 15.83 7.138L14.5 7.5"
+              stroke="#686868"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <input type="file" class="file-upload__input" multiple />
+          <span class="file-upload__text"
+            >Выберите файлы, которые хотите загрузить со своего
+            компьютера.</span
+          >
+        </label>
+        <div class="file-upload__preview"></div>
+      </div>
+      <button class="btn btn-reset btn-primary form-classic__btn" type="submit">
+        Заказать звонок
+      </button>
+
+      <p class="form-classic__text">
+        Нажимая кнопку “Заказать звонок” вы соглашаетесь с
+        <a href="policy.html">политикой конфиденциальности</a>
+      </p>
+    </form>
+  </div>
+</div>

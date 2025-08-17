@@ -1,0 +1,55 @@
+.tabs {
+  &__nav {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 40px;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  &__nav-item {
+  }
+
+  &__nav-btn {
+    border-radius: 12px;
+    padding: 10px 20px;
+    background: var(--system-gray-system);
+    transition: all 0.3s;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 115%;
+    white-space: nowrap;
+
+    &:hover {
+      background: #e4ebf0;
+    }
+
+    &:focus {
+      outline: none;
+      background: var(--system-sea-blue);
+      color: var(--system-white);
+    }
+
+    &--active {
+      background: var(--system-sea-blue);
+      color: var(--system-white);
+
+      &:hover {
+        background: var(--system-sea-blue-hover);
+      }
+    }
+  }
+
+  &__content {
+  }
+
+  &__panel {
+  }
+}

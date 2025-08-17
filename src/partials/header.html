@@ -1,0 +1,196 @@
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <img src="img/logo-white.svg" width="148" alt="logo" />
+        <img
+          src="img/logo-primary.svg"
+          class="primary"
+          width="148"
+          alt="logo"
+        />
+      </a>
+      <div class="header__controls">
+        <button
+          class="btn-reset header__controls-burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          data-burger
+        >
+          <svg class="header__controls-burger-icon">
+            <use xlink:href="img/sprite.svg#burger"></use>
+          </svg>
+        </button>
+        <button
+          class="btn-reset header__controls-callback"
+          data-graph-path="callback-modal"
+        >
+          <span class="header__btn-text">Заказать звонок</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="burger-menu" data-menu>
+  <video
+    class="burger-menu__video"
+    src="video/services.mp4"
+    autoplay
+    muted
+    loop
+  ></video>
+
+  <div class="burger-menu__inner">
+    <div class="burger-menu__header">
+      <a href="/" class="burger-menu__logo">
+        <img src="img/logo-white.svg" width="148" alt="logo" />
+      </a>
+      <button
+        class="btn-reset burger-menu__close"
+        aria-label="Закрыть меню"
+        data-burger
+      >
+        <svg class="burger-menu__close-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="burger-menu__content">
+      <nav class="burger-menu__nav">
+        <ul class="burger-menu__list">
+          <li class="burger-menu__item">
+            <a href="/services.html" class="burger-menu__link">Услуги</a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="/about.html" class="burger-menu__link">О компании</a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="/faq.html" class="burger-menu__link">Вопрос эксперту</a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="/contacts.html" class="burger-menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="burger-menu__controls">
+      <button
+        class="btn-reset burger-menu__controls-callback"
+        data-graph-path="callback-modal"
+        data-menu-item
+      >
+        <span class="header__btn-text">Заказать звонок</span>
+      </button>
+      <a
+        href="mailto:info@vpklab.ru"
+        class="burger-menu__controls-callback"
+        data-menu-item
+      >
+        <span class="header__btn-text">Связаться по почте</span>
+      </a>
+    </div>
+
+    <div class="burger-menu__footer">
+      <footer class="footer primary">
+        <div class="footer__top footer-top">
+          <div class="footer-top__logo">
+            <a href="/" class="footer-top__logo-link">
+              <img
+                class="footer__logo"
+                src="/img/logo-primary.svg"
+                alt="ВПК ЛАБ"
+              />
+              <img
+                class="footer__logo white"
+                src="/img/logo-white.svg"
+                alt="ВПК ЛАБ"
+              />
+            </a>
+            <div class="footer-top__logo-address">
+              Москва, ул. Бутлерова, д.&nbsp;17 (БЦ&nbsp;Neo Geo), пом. 50/1
+            </div>
+          </div>
+          <div class="footer-top__columns footer-columns">
+            <div class="footer-columns__item footer-column">
+              <div class="footer-column__title">Компания</div>
+              <ul class="footer-column__list">
+                <li>
+                  <a href="https://vpk-lab.ru/about"> О компании </a>
+                </li>
+                <li>
+                  <a href="https://vpk-lab.ru/about#history"> История </a>
+                </li>
+                <li>
+                  <a href="https://vpk-lab.ru#certificates"> Сертификаты </a>
+                </li>
+                <li>
+                  <a href="https://vpk-lab.ru/faq"> Вопрос эксперту </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-columns__item footer-column">
+              <div class="footer-column__title">Услуги</div>
+              <ul class="footer-column__list">
+                <li>
+                  <a
+                    href="https://vpk-lab.ru/service/analyses/himiceskii-analiz-vody"
+                  >
+                    Исследования
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://vpk-lab.ru/service/physical/parametry-osveshhennosti"
+                  >
+                    Физические факторы
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://vpk-lab.ru/service/engineering/ekologiceskie-inzenernye-izyskaniia"
+                  >
+                    Инженерные изыскания
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vpk-lab.ru/service/projects/proekt-szz">
+                    Экологическое проектирование
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-top__contacts footer-contacts">
+            <a class="footer-contacts__phone" href="tel:+74995011541">
+              + 7 (499) 501 15 41
+            </a>
+            <a class="footer-contacts__email" href="mailto:info@vpklab.ru">
+              info@vpklab.ru
+            </a>
+            <span class="footer-contacts__schedule">
+              Пн-Пт с 9:00 до 18:00
+            </span>
+          </div>
+        </div>
+        <div class="footer__bottom footer-bottom">
+          <div class="footer-bottom__left">
+            2024 © ВПК ЛАБ. Все права защищены.
+            <a href="policy.html">Политика конфиденциальности</a>.
+          </div>
+          <div class="footer-bottom__right">
+            Разработка дизайна:
+            <a
+              href="https://bento.me/artur-designer"
+              rel="nofollow"
+              target="_blank"
+              >nugmanov.design</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>

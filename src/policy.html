@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <title>Политика конфиденциальности</title>
+    @include('partials/head.html')
+  </head>
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header-black.html')
+      <main class="main">
+        @include('partials/components/policy-page/policy.html')
+
+        <div class="graph-modal">
+          @include('partials/components/success-modal.html')
+          @include('partials/components/callback-modal.html')
+        </div>
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<div
+  class="graph-modal__container question-modal"
+  role="dialog"
+  aria-modal="true"
+  data-graph-target="question-modal"
+>
+  <button
+    class="btn-reset js-modal-close graph-modal__close"
+    aria-label="Закрыть модальное окно"
+  ></button>
+  <div class="question-modal__content question-modal-content">
+    <div class="question-modal-content__title">Задайте вопрос</div>
+    <p class="question-modal-content__subtitle">
+      Заполните форму а наши специалисты дадут вам ответ и опубликуют его на
+      этой странице
+    </p>
+    <form class="form-classic question-form">
+      <label class="label">
+        <input class="input-reset" type="text" name="Имя" placeholder="Имя" />
+      </label>
+      <label class="label">
+        <input
+          class="input-reset"
+          type="tel"
+          name="Телефон"
+          placeholder="Телефон"
+        />
+      </label>
+      <label class="label">
+        <textarea
+          class="input-reset"
+          type="text"
+          name="Тема"
+          placeholder="Тема"
+        ></textarea>
+      </label>
+      <label class="label">
+        <textarea
+          class="input-reset"
+          type="text"
+          name="Вопрос"
+          placeholder="Опишите ваш вопрос"
+        ></textarea>
+      </label>
+
+      <label class="question-form__checkbox custom-checkbox">
+        <input type="checkbox" class="custom-checkbox__field" />
+        <span class="custom-checkbox__content">
+          <p class="question-form__text">
+            Даю согласие на обработку персональных данных в соответствии с
+            <a href="policy.html">политикой конфиденциальности</a>.
+          </p>
+        </span>
+      </label>
+
+      <button class="btn btn-reset btn-primary form-classic__btn" type="submit">
+        Задать вопрос
+      </button>
+    </form>
+  </div>
+</div>

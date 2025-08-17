@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <title>Об испытательной лаборатории ВПК ЛАБ в Москве</title>
+    @include('partials/head.html')
+  </head>
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        @include('partials/components/about-page/hero.html')
+        @include('partials/components/main-page/team.html')
+        @include('partials/components/about-page/laboratory.html')
+        @include('partials/components/main-page/certificates.html')
+        @include('partials/components/callback.html')
+
+        <div class="graph-modal">
+          @include('partials/components/success-modal.html')
+          @include('partials/components/callback-modal.html')
+        </div>
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

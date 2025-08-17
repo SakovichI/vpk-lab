@@ -1,0 +1,124 @@
+.advantages {
+  padding-bottom: 150px;
+
+  &__pretitle {
+    font-size: 14px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: #051824;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__item {
+    padding-top: 40px;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    border-top: 1px solid var(--system-lines);
+  }
+}
+.advantages-item {
+  &__title {
+    max-width: 350px;
+    flex: 1 1 20%;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  &__title-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--system-900);
+  }
+
+  &__description {
+    max-width: 560px;
+    flex: 1 1 50%;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    color: #051824;
+  }
+}
+
+@media (max-width: 1000px) {
+  .advantages {
+    padding-bottom: 110px;
+
+    &__title {
+      font-size: 50x;
+      margin-bottom: 32px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 40px 16px;
+    }
+
+    &__item {
+      flex: 1 1 45%;
+      padding-top: 40px;
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      justify-content: space-between;
+      border-top: 1px solid var(--system-lines);
+    }
+  }
+  .advantages-item {
+    &__title {
+      max-width: 100%;
+      flex: 1 1 20%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    &__description {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages {
+    padding-bottom: 100px;
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__item {
+      flex: 1 1 100%;
+      padding-top: 40px;
+      max-width: 100%;
+    }
+  }
+}

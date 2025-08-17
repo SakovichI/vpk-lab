@@ -1,0 +1,58 @@
+.fancybox__backdrop {
+  backdrop-filter: blur(14px);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.fancybox__slide {
+  & video,
+  img {
+    border-radius: 18px;
+  }
+}
+
+.fancybox__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fancybox__carousel {
+  max-width: 750px;
+  width: 100%;
+}
+
+.has-html5video .f-html,
+.has-youtube .f-html,
+.has-vimeo .f-html {
+  max-width: 480px;
+  max-height: 80vh;
+  border-radius: 18px;
+}
+
+.fancybox__slide .f-button[data-fancybox-close] {
+  top: calc(48px * -1.2);
+  right: calc(48px * -1.2);
+  border: 1px solid var(--system-white);
+  width: 48px;
+  height: 48px;
+  border-radius: 42px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.f-button.is-arrow {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1px solid var(--system-white);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.1);
+
+  & svg {
+    width: 16px;
+    height: 15px;
+    stroke-width: 0;
+  }
+}

@@ -1,0 +1,119 @@
+.laboratory {
+  padding-bottom: 150px;
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__slider {
+    overflow: visible;
+  }
+  & .slider__controls {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid var(--ostalnye-100);
+  }
+
+  &__slide-wrapper {
+    & .swiper-slide.swiper-slide-active {
+      opacity: 1;
+    }
+    & .swiper-slide.swiper-slide-active + .swiper-slide {
+      opacity: 1;
+    }
+    & .swiper-slide.swiper-slide-active + .swiper-slide + .swiper-slide {
+      opacity: 1;
+    }
+    & .swiper-slide.swiper-slide-active + .swiper-slide + .swiper-slide {
+      opacity: 1;
+    }
+  }
+
+  &__slide {
+    opacity: 0.5;
+    max-width: 400px;
+    transition: opacity 0.3s;
+  }
+
+  &__slide-img {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    & img {
+      vertical-align: top;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &__slide-name {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
+    color: var(--system-900);
+  }
+
+  &__slide-position {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    color: #8595a3;
+  }
+}
+
+@media (max-width: 1300px) {
+  .laboratory {
+    padding-bottom: 120px;
+
+    &__slide-wrapper {
+      & .swiper-slide.swiper-slide-active + .swiper-slide + .swiper-slide {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .laboratory {
+    padding-bottom: 100px;
+
+    &__title {
+      font-size: 50px;
+    }
+
+    &__slide-wrapper {
+      & .swiper-slide.swiper-slide-active + .swiper-slide + .swiper-slide {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .laboratory {
+    &__title {
+      font-size: 36px;
+    }
+
+    &__slide-wrapper {
+      & .swiper-slide.swiper-slide-active + .swiper-slide {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .laboratory {
+    &__slide-wrapper {
+      & .swiper-slide.swiper-slide-active + .swiper-slide {
+        opacity: 0.5;
+      }
+    }
+  }
+}
