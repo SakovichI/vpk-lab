@@ -17628,6 +17628,7 @@ const modal = new graph_modal__WEBPACK_IMPORTED_MODULE_0__["default"]();
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var graph_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! graph-tabs */ "./node_modules/graph-tabs/src/graph-tabs.js");
 
+const certificatesTabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]("certificates");
 const categoriesTabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]("categories");
 const questionsTabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]("questions");
 const servicesTabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]("services");
