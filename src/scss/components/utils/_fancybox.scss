@@ -49,10 +49,19 @@
   border: 1px solid var(--system-white);
   border-radius: 13px;
   background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
 
   & svg {
     width: 16px;
     height: 15px;
     stroke-width: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .fancybox__slide .f-button[data-fancybox-close] {
+    top: 16px;
+    right: 16px;
+    backdrop-filter: blur(14px);
   }
 }

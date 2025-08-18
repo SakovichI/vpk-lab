@@ -1874,6 +1874,7 @@ textarea.just-validate-error-field {
   border: 1px solid var(--system-white);
   border-radius: 13px;
   background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
 }
 .f-button.is-arrow svg {
   width: 16px;
@@ -1881,6 +1882,13 @@ textarea.just-validate-error-field {
   stroke-width: 0;
 }
 
+@media (max-width: 768px) {
+  .fancybox__slide .f-button[data-fancybox-close] {
+    top: 16px;
+    right: 16px;
+    backdrop-filter: blur(14px);
+  }
+}
 .tabs__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1905,6 +1913,7 @@ textarea.just-validate-error-field {
   font-size: 15px;
   line-height: 115%;
   white-space: nowrap;
+  color: var(--system-900);
 }
 .tabs__nav-btn:hover {
   background: #e4ebf0;
